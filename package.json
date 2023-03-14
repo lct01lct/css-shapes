@@ -1,0 +1,24 @@
+{
+  "name": "css-shape",
+  "version": "1.0.0",
+  "description": "The shapes of css",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lct01lct/css-shapes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lct01lct/css-shapes/issues"
+  },
+  "homepage": "https://github.com/lct01lct/css-shapes#readme",
+  "devDependencies": {
+    "sass": "^1.59.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
