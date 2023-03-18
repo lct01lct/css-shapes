@@ -1,4 +1,8 @@
-const modules = import.meta.glob<{ default: string }>('./pages/**/index.html', { eager: true });
+import './assets/styles/index.scss';
+
+const modules = import.meta.glob<{ default: string }>('./pages/**/index.html', {
+  eager: true
+});
 const matchModuleName = (path: string) => {
   const reg = /.\/pages\/(.*?)\/index.html/g;
 
@@ -11,7 +15,8 @@ for (const module in modules) {
 
 function renderShape(name: string, path: string) {
   const oA = document.createElement('a');
+  oA.classList.add('shape-link');
   oA.href = path;
   oA.innerHTML = name;
-  document.body.appendChild(oA);
+  (document.querySelector('#app') as HTMLElement).appendChild(oA);
 }
