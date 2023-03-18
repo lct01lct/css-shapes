@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "The shapes of css",
   "scripts": {
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,15 @@
   },
   "homepage": "https://github.com/lct01lct/css-shapes#readme",
   "devDependencies": {
-    "prettier": "^2.8.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "sass": "^1.59.2",
     "typescript": "^4.9.5",
     "vite": "^4.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
